@@ -50,14 +50,6 @@ body {
 	cursor: pointer;
 }
 
-.nav-toggle-label span {
-	display: block;
-	width: 28px;
-	height: 3px;
-	background-color: var(--light);
-	border-radius: 2px;
-}
-
 .nav-container {
 	width: 45%;
 	display: flex;
