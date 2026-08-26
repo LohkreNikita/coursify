@@ -13,7 +13,11 @@
 	<body>
 		<header class="header-container">
 			<h1>Coursify</h1>
-			<nav class="nav-container">
+			<input type="checkbox" id="nav-toggle" class="nav-toggle" />
+			<label for="nav-toggle" class="nav-toggle-label">
+				<i class="fa-solid fa-bars fa-xl" style="color:#f9faf8;"></i>
+			</label>
+			<nav class="nav-container" aria-label="Main navigation">
 				<a href="index.html">Courses</a>
 				<a href="about.html">About</a>
 				<a href="contact.html">Contact</a>
@@ -31,14 +35,14 @@
 					</p>
 					<button class="signUp-btn">Sign Up</button>
 				</div>
-				<div class="hero-img">
-					<img
-						src="/asset/hero.png"
-						height="300px"
-						width="600px"
-						alt="Student learing on laptop"
-					/>
-				</div>
+				<img
+					class="hero-img"
+					src="asset/hero.png"
+					height="300px"
+					width="600px"
+					alt="Student learning on laptop"
+				>
+
 			</section>
 			<section class="features-section">
 				<h2>Why learn with us</h2>
@@ -85,7 +89,7 @@
 						<h2>Start learning today</h2>
 						<p>Sign up for free, cancel anytime</p>
 					</div>
-					<button class="signUp-btn">Sign Up</button>
+					<a href="signup.html"><button class="signUp-btn">Sign Up</button></a>
 				</article>
 			</section>
 		</main>
