@@ -99,7 +99,6 @@ h1 {
 	.nav-toggle:checked ~ .nav-container {
 		display: flex;
 	}
-	
 }
 
 .hero-section {
@@ -123,12 +122,24 @@ h1 {
 	font-size: 48px;
 	color: var(--light);
 	font-weight: 800;
-
 }
 
 .hero-txt p {
 	font-size: 18px;
 	color: var(--muted);
+}
+
+.hero-section .signup-btn {
+	background-color: var(--blue);
+	color: var(--light);
+	padding: 12px 40px;
+	border: 2px solid var(--blue);
+	border-radius: 5px;
+}
+.hero-img {
+	flex: 1;
+	max-width: 100%;
+	height: auto;
 }
 
 .odd {
@@ -162,20 +173,6 @@ h1 {
 	justify-content: space-between;
 	align-items: flex-start;
 	width: 75%;
-}
-
-
-.signUp-btn {
-	background-color: var(--blue);
-	color: var(--light);
-	padding: 12px 40px;
-	border: 2px solid var(--blue);
-	border-radius: 5px;
-}
-.hero-img {
-	flex: 1;
-	max-width: 100%;
-	height: auto;
 }
 
 .features-section {
@@ -240,18 +237,6 @@ h1 {
 	text-align: center;
 }
 
-@media (max-width: 768px) {
-	.features-section li {
-		flex-basis: calc((100% - 20px) / 2);
-	}
-}
-
-@media (max-width: 375px) {
-	.features-section li {
-		flex-basis: 100%;
-	}
-}
-
 .block-quote {
 	width: 100%;
 	background-color: var(--muted);
@@ -295,7 +280,40 @@ h1 {
 	width: 100%;
 }
 
-.cta-section .signUp-btn {
+.cta-banner {
+	background-color: #ffffff;
+	padding: 60px 20px;
+	display: flex;
+	justify-content: center;
+}
+
+.cta-section {
+	background-color: var(--blue);
+	color: var(--muted);
+	width: 100%;
+	max-width: 1200px;
+	border-radius: 12px;
+	padding: 40px 60px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+
+.cta-section h2 {
+	font-size: 20px;
+	margin: 0 0 12px;
+}
+
+.cta-section p {
+	font-size: 16px;
+	line-height: 1.5;
+	margin: 0 0 18px;
+	font-weight: 200;
+}
+
+.cta-section .signup-btn {
 	background-color: var(--blue);
 	color: #ffffff;
 	padding: 12px 40px;
@@ -476,4 +494,124 @@ fieldset {
 .course-card:focus-within {
 	outline: 3px solid var(--muted);
 	outline-offset: 2px;
+}
+
+/* Tablet  */
+@media (max-width: 768px) {
+	.features-section li {
+		flex-basis: calc((100% - 20px) / 2);
+	}
+	.cta-banner {
+		padding: 40px 16px;
+	}
+
+	.cta-section {
+		padding: 32px 40px;
+		justify-content: center;
+		text-align: center;
+	}
+
+	.cta-section h2 {
+		font-size: 18px;
+	}
+
+	.cta-section p {
+		font-size: 15px;
+	}
+	.block-quote {
+		min-height: 220px;
+		padding: 40px var(--content-padding);
+	}
+
+	.block-quote blockquote {
+		width: 100%;
+		margin: 0;
+		font-size: 20px;
+		line-height: 1.5;
+		text-align: center;
+	}
+
+	.block-quote cite {
+		font-size: 14px;
+	}
+	.hero-section {
+		padding-bottom: 8%;
+	}
+
+	.hero-txt h1 {
+		font-size: 36px;
+	}
+
+	.hero-txt p {
+		font-size: 16px;
+	}
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+	.features-section li {
+		flex-basis: 100%;
+	}
+	.cta-section {
+		flex-direction: column;
+		align-items: stretch;
+		text-align: center;
+		padding: 32px 24px;
+		gap: 16px;
+	}
+
+	.cta-section h2 {
+		font-size: 20px;
+		margin: 0;
+	}
+
+	.cta-section p {
+		font-size: 14px;
+		margin: 0;
+	}
+
+	.signup-btn {
+		width: 100%;
+		padding: 14px 0;
+		font-size: 15px;
+	}
+	.block-quote {
+		min-height: auto;
+		padding: 32px 20px;
+	}
+
+	.block-quote blockquote {
+		width: 100%;
+		font-size: 20px;
+		line-height: 1.4;
+	}
+
+	.block-quote cite {
+		font-size: 13px;
+		text-align: center;
+		margin-top: 12px;
+	}
+	.hero-section {
+		flex-direction: column;
+		align-items: stretch;
+		padding-bottom: 10%;
+		gap: 24px;
+	}
+
+	.hero-txt {
+		padding-bottom: 0;
+		text-align: center;
+	}
+
+	.hero-txt h1 {
+		font-size: 28px;
+	}
+
+	.hero-txt p {
+		font-size: 15px;
+	}
+
+	.signup-btn {
+		width: 100%;
+	}
 }
