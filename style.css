@@ -23,6 +23,8 @@ body {
 	margin: 0;
 }
 
+/* header */
+
 .header-container {
 	background-color: var(--dark);
 	height: 100px;
@@ -101,6 +103,8 @@ h1 {
 	}
 }
 
+/* hero section */
+
 .hero-section {
 	max-width: 100vw;
 	display: flex;
@@ -129,7 +133,7 @@ h1 {
 	color: var(--muted);
 }
 
-.hero-section .signup-btn {
+.signup-btn {
 	background-color: var(--blue);
 	color: var(--light);
 	padding: 12px 40px;
@@ -174,6 +178,8 @@ h1 {
 	align-items: flex-start;
 	width: 75%;
 }
+
+/* feactures */
 
 .features-section {
 	background-color: var(--light);
@@ -237,6 +243,7 @@ h1 {
 	text-align: center;
 }
 
+/* block quote */
 .block-quote {
 	width: 100%;
 	background-color: var(--muted);
@@ -279,6 +286,7 @@ h1 {
 .action article {
 	width: 100%;
 }
+/* cta-banner */
 
 .cta-banner {
 	background-color: #ffffff;

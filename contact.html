@@ -25,7 +25,50 @@
 			</nav>
 		</header>
 		<main>
-			<h1>Contact Us</h1>
+			<section class="hero-section" style="height: 200px">
+				<div class="hero-txt" style="text-align: center; padding: 20px">
+					<h1>Contact Us</h1>
+					<p>Have questions or feedback? We'd love to hear from you!</p>
+				</div>
+			</section>
+			<form>
+				<fieldset
+					class="profile-details"
+					style="
+						width: 50%;
+						margin: 0 auto;
+						padding: 20px;
+						border: 1px solid #ccc;
+						border-radius: 5px;
+					"
+				>
+					<legend>Send us a message</legend>
+					<p>
+						<label for="name">Your Name:</label>
+						<input type="text" id="name" name="name" required />
+					</p>
+					<p>
+						<label for="email">Your Email:</label>
+						<input type="email" id="email" name="email" required />
+					</p>
+					<p>
+						<label for="message">Your Message:</label>
+						<textarea
+							id="message"
+							name="message"
+							rows="5"
+							required
+							style="
+								width: 100%;
+								padding: 10px;
+								border: 1px solid #ccc;
+								border-radius: 5px;
+							"
+						></textarea>
+					</p>
+					<button class="signup-btn" type="submit">Send Message</button>
+				</fieldset>
+			</form>
 		</main>
 		<footer>
 			<p>Copyright &copy;</p>
