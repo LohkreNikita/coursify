@@ -577,7 +577,7 @@ fieldset {
 	gap: 20px;
 	align-items: center;
 	justify-content: space-between;
-	padding: 20px var(--content-padding);
+	padding: 20px 0px;
 	text-align: justify;
 }
 .contact-form {
