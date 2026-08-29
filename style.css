@@ -514,6 +514,13 @@ fieldset {
 	gap: 20px;
 	text-align: justify;
 }
+.contact-form {
+	width: 50%;
+	margin: 0 auto;
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
 
 /* Tablet  */
 @media (max-width: 768px) {
@@ -632,5 +639,18 @@ fieldset {
 
 	.signup-btn {
 		width: 100%;
+	}
+	.about-container {
+		flex-direction: column;
+		align-items: stretch;
+		text-align: center;
+	}
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+	.contact-form {
+		width: 100%;
+		padding: 10px;
 	}
 }
